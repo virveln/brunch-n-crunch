@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>brunch n' crunch</title>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <!-- CSS STYLE -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mynavbar" data-bs-offset="50">
+    <header>
+        <!-- NAVBAR -->
+        <!-- class fixed to make the nav always seen on top of the site -->
+        <nav id="mynavbar" class="navbar navbar-expand-lg bg-body-white fixed-top bg-white py-0">
+            <div class="container-fluid">
+                <a class="d-lg-none" href="#home"><img class="py-2 ms-2 logo" src="images/logo.png" alt="logo"></a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end text-center" tabindex="-1" id="offcanvasNavbar">
+                    <div class="offcanvas-header ">
+                        <button type="button" class="btn-close pe-5 pt-4 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center align-items-center flex-grow-1 pe-3">
+                            <li class="nav-item" data-bs-dismiss="offcanvas">
+                                <a class="d-lg-none" href="#home"><img class="d-lg-none w-50 pb-3" src="images/logo.png" alt="logo"></a>
+                            </li>
+                            <li class="nav-item dropdown" data-bs-dismiss="offcanvas">
+                                <a class="nav-link dropdown-toggle px-3 py-2 my-1 fs-2 text-lowercase" href="#menu" >menu</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item text-center text-lg-start py-3 py-lg-1 pe-lg-5" href="#">whole menu</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item text-center text-lg-start py-3 py-lg-1 pe-lg-5" href="#">caffeine craze</a></li>
+                                    <li><a class="dropdown-item text-center text-lg-start py-3 py-lg-1 pe-lg-5" href="#">eggselent eggs</a></li>
+                                    <li><a class="dropdown-item text-center text-lg-start py-3 py-lg-1 pe-lg-5" href="#">granola goodness</a></li>
+                                    <li><a class="dropdown-item text-center text-lg-start py-3 py-lg-1 pe-lg-5" href="#">pancake paradise</a></li>
+                                    <li><a class="dropdown-item text-center text-lg-start py-3 py-lg-1 pe-lg-5" href="#">smoothie sensation</a></li>
+                                    <li><a class="dropdown-item text-center text-lg-start py-3 py-lg-1 pe-lg-5" href="#">tosty toast</a></li>
+                                    <li><hr class="dropdown-divider d-lg-none"></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item" data-bs-dismiss="offcanvas">
+                                <a class="nav-link px-3 py-2 my-1 fs-2 text-lowercase" href="#event">Event</a>
+                            </li>
+                            <li class="nav-item" data-bs-dismiss="offcanvas">
+                                <a class="d-none d-lg-block" href="#home"><img class="mx-4 py-2 logo" src="images/logo.png" alt="logo"></a>
+                            </li>
+                            <li class="nav-item" data-bs-dismiss="offcanvas">
+                                <a class="nav-link px-3 py-2 my-1 fs-2 text-lowercase" href="#about">About</a>
+                            </li>
+                            <li class="nav-item" data-bs-dismiss="offcanvas">
+                                <a class="nav-link px-3 py-2 my-1 fs-2 text-lowercase" href="#contact">Contact</a>
+                            </li>
+                            <li class="nav-item d-none" data-bs-dismiss="offcanvas">
+                                <a class="nav-link px-3 py-2 my-1 fs-2 text-lowercase" href="#instagram"></a>
+                            </li>            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="scroller">
+        <!-- HERO -->
+        <section id="home">
+            <div class="hero mb-lg-5">
+                <div class="hero-text ">
+                    <h1 class="text-center px-1 ">brunch <span class="title-n">n'</span> <span class="ps-lg-3">crunch</span>
+                        <span class="d-block mx-auto mx-4 pt-1 fs-6 fw-light lh-base rounded slogan anim-hero">A good morning for your body, mind and soul, regardless of your occasion.</span>
+                    </h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- WEEK SPECIAL & OPEN HOURS -->
+        <section class="container py-0" id="week-special">
+            <div class="row">
+                <div class="col-lg-7">
+                    <h2>this weeks brunchilicious</h2>
+                    <h3 class="fs-5">&#9886; week 14 &#9887; </h3>
+                    <p>Our crispy homemade toast with poached eggs, avocado, tomato and herbes. Perfectly combined with a coffee, fresh-squeezed orange juice or a mimosa of your choice.</p>
+                    <h5>149sek</h5>
+                </div>
+                <div class="col-lg-5 mt-lg-0 mt-3">
+                    <h2>open hours</h2>
+                    <div class="d-flex">
+                        <div class="me-5">
+                            <p class="m-0 mb-1">Monday - Friday</p>
+                            <p>10:00 - 16:00</p>
+                        </div>
+                        <div>
+                            <p class="m-0 mb-1">Saturday - Sunday</p>
+                            <p class="pb-3">09:00 - 17:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <!-- breaker -->
+        <div class="d-flex justify-content-between mt-5 mx-3 breaker-text">
+            <span class="text-center">nutritious</span>
+            <span class="text-center mx-3">sustainable</span>
+            <span class="text-center">organic</span>
+        </div>
+
+        <!-- MENU -->
+        <section id="menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 row order-lg-1 mb-3 category-icons anim anim-fade anim-from-right">
+                        <h2 class="col-12">our menu</h2>
+                        <p>Eat with us, take-away or host an event, <br> we got you covered!</p>
+
+                        <!-- CATEGORIES -->
+                        <div class="col-6 col-md-4 col-lg-6 px-1 py-3 text-center">
+                            <img class="img-fluid category-img" src="images/category-coffee.png" alt="coffee-icon">
+                            <h4 class="pt-1 pb-2">caffeine<br>craze</h4>
+                            <a class="btn text-decoration-none" href="#">show menu</a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-6 px-1 py-3 text-center">
+                            <img class="img-fluid category-img" src="images/category-egg.png" alt="egg-icon">
+                            <h4 class="pt-1 pb-2">eggcellent<br>eggs</h4>
+                            <a class="btn text-decoration-none" href="#">show menu</a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-6 px-1 py-3 text-center ">
+                            <img class="img-fluid category-img" src="images/category-granola.png" alt="granola-icon">
+                            <h4 class="pt-1 pb-2">granola<br>goodness</h4>
+                            <a class="btn text-decoration-none" href="#">show menu</a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-6 px-1 py-3 text-center">
+                            <img class="img-fluid category-img" src="images/category-pancake.png" alt="pancake-icon">
+                            <h4 class="pt-1 pb-2">pancake<br>paradise</h4>
+                            <a class="btn text-decoration-none" href="#">show menu</a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-6 px-1 py-3 text-center">
+                            <img class="img-fluid category-img" src="images/category-smoothie.png" alt="smoothie-icon">
+                            <h4 class="pt-1 pb-2">smoothie<br>sensation</h4>
+                            <a class="btn text-decoration-none" href="#">show menu</a>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-6 px-1 py-3 text-center">
+                            <img class="img-fluid category-img" src="images/category-toast.png" alt="toast-icon">
+                            <h4 class="pt-1 pb-2">toasty<br>toast</h4>
+                            <a class="btn text-decoration-none" href="#">show menu</a>
+                        </div>    
+                    </div>
+
+                    <!-- CAROUSEL OF MENU ITEMS -->
+                    <div class="col-lg-7">
+                        <div class="pb-3 pb-lg-0 position-relative fluid">
+
+                            <div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="images/item10.jpg" class="d-block w-100 carousel-img rounded" alt="image of food from menu">                                       
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/item9.jpg" class="d-block w-100 carousel-img rounded" alt="image of food from menu">                                      
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/item8.jpg" class="d-block w-100 carousel-img rounded" alt="image of food from menu">                                        
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/item7.jpg" class="d-block w-100 carousel-img rounded" alt="image of food from menu">                                       
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/item6.jpg" class="d-block w-100 carousel-img rounded" alt="image of food from menu">                                      
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/item5.jpg" class="d-block w-100 carousel-img rounded" alt="image of food from menu">                                      
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/item4.jpg" class="d-block w-100 carousel-img rounded" alt="image of food from menu">                                       
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/item3.jpg" class="d-block w-100 carousel-img rounded" alt="image of food from menu">                                       
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/item2.jpg" class="d-block w-100 carousel-img rounded" alt="image of food from menu">  
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="images/item1.jpg" class="d-block w-100 carousel-img rounded" alt="image of food from menu">
+                                    </div>
+                                    <!-- position absolute is used to be able to put text over the images -->
+                                    <a class="btn position-absolute w-75 top-50 start-50 translate-middle shadow text-decoration-none menu-btn" href="#">show whole menu</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- EVENT -->
+        <section id="event">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-lg-5 anim anim-fade anim-from-left">
+
+                        <h2>event with us</h2>
+                        <p>Host your next event at our botanic and modern restaurant. Our private event space can
+                            accommodate groups of all sizes and our expert chefs will create your choosen deal below or a customizable menu using
+                            only the freshest, locally-sourced ingredients. Our cozy, botanical wonderland provides a
+                            warm and welcoming ambiance, perfect for any occasion.
+                        </p>
+                        <p class="pt-3">Contact us today to start planning your unforgettable gathering.</p>
+                        <div>
+                            <p><a class="fw-light" href="mailto:event@bnc.com">event@bnc.com</a></p>
+                            <p><a class="fw-light" href="tel:060-123123" content="+4680123123">+46 08 123 123</a></p>
+                        </div>
+
+                        <button class="btn d-lg-none mb-3 w-100 deals-btn" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+                            aria-controls="collapseExample">show event deals</button>
+                            <!-- EVENT DEALS IN A COLLAPSE -->
+                        <div class="collapse d-lg-block pt-3" id="collapseExample">
+                            <div>
+                                <h3 class="mb-2 fs-4">&#9886; brunch buffet special &#9887;</h3>
+                                <p>This deal include an array of delicious brunch items, including fresh fruit,
+                                    pastries, locally-raised meats, and artisanal cheeses. Our expert chefs will work
+                                    with you to create a customizable menu that suits your preferences and dietary
+                                    needs.</p>
+                                <h5>299sek/person</h5>
+                            </div>
+                            <div>
+                                <h3 class="mt-4 mb-2 fs-4">&#9886; weekday brunch meeting &#9887;</h3>
+                                <p>Need a space for a weekday brunch meeting? Book our private event space includes a
+                                    breakfast sandwich or burrito, fresh fruit, and coffee or tea.</p>
+                                <h5>249sek/person</h5>
+                            </div>
+                            <div>
+                                <h3 class="mt-4 mb-2 fs-4">&#9886; bottomless mimosas party &#9887;</h3>
+                                <p>This deal is for a more relaxed and casual event, with bottomless mimosas made with
+                                    fresh, organic orange juice and sparkling wine.</p>
+                                <h5>199sek/person</h5>
+                            </div>
+                            <div>
+                                <h3 class="mt-4 mb-2 fs-4">&#9886; group brunch bonanza &#9887;</h3>
+                                <p>Book a table for 8 or more people for brunch and receive 10% off your total bill.
+                                    Valid only on Saturdays and Sundays from 10am-13pm. Cannot be combined with other
+                                    discounts or offers.</p>
+                                <h5 class="mb-lg-0">10% discount</h5>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- SECTION IMAGE -->
+                    <div class="col-lg-7 d-flex">
+                        <img class="img-fluid section-image rounded" src="images/event.jpg" alt="Image of an event">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="container" id="about">
+            <div class="row">
+                <!-- TEXT ABOUT US -->
+                <div class="col-lg-5 order-lg-1  anim anim-fade anim-from-right">
+                    <h2>about us</h2>
+                    <p>Introducing a brunch experience like no other - where organic meets botanic, and modern meets
+                        traditional. Our restaurant is a haven for food lovers seeking a fresh, sustainable, and healthy
+                        approach to brunch.
+                    </p>
+                    <p>Our chefs use only the finest, organic ingredients sourced from local farms and suppliers.
+                        Every dish is carefully crafted with a focus on natural, wholesome flavors that nourish your
+                        body and soul. From fresh fruit and vegetables to locally-raised meats and artisanal
+                        cheeses, we offer a menu that will tantalize your taste buds.
+                        <button class="d-lg-none read-more-btn fw-light"> ...read more</button>
+                    </p>
+                   
+                    <div class="d-lg-block read-more-text">
+                         <p>Step into our botanical wonderland, where lush greenery, natural wood, and soft lighting
+                            create a warm and welcoming ambiance. Our modern yet cozy space is perfect for enjoying a
+                            leisurely brunch with friends, a romantic date, or a solo meal in peaceful solitude.</p>
+                        <p class="mb-lg-0">At our restaurant, we strive to create an experience that's not just about the food - it's
+                            about the connection between people, nature, and nourishment. Join us for a delicious brunch
+                            that's good for your body and good for the planet.</p>
+                    </div>
+                </div>
+                <!-- SECTION IMAGE -->
+                <div class="col-lg-7 d-flex">
+                    <img class="img-fluid section-image rounded" src="images/shop.jpg" alt="Image of the restaurant">
+                </div>
+            </div>
+        </section>        
+
+        <!-- CONTACT -->
+        <section class="container" id="contact">
+            <div class="row">
+                <div class="col-lg-5 mb-3 mb-lg-0 anim anim-fade anim-from-left">
+                    <h2>contact us</h2>
+                    <p>Give us a call at <a class="fw-light" href="tel:060-123123" content="+4680123123">+46 80 123 123</a> or send us an email. We're happy to hear from you!</p>
+                    <!-- FORM -->
+                    <form>
+                        <div class="mb-3">
+                          <label for="name" class="form-label">name:</label>
+                          <input type="text" class="form-control" id="name" name="name" placeholder="Anna Andersson" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="email" class="form-label">email:</label>
+                          <input type="email" class="form-control" id="email" name="email" placeholder="abc@email.com" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="message" class="form-label">message:</label>
+                          <textarea class="form-control" id="message" name="message" rows="5" placeholder="Hello, I would like to..." required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <p class="form-label">select your reason contacting us:</p>
+                            <div>
+                              <div class="form-check form-check-block">
+                                <input class="form-check-input" type="radio" name="email-select" id="event-email" value="event@bnc.com" checked>
+                                <label class="form-check-label" for="event-email">event</label>
+                                <span class="fst-italic opacity-50 fw-light">event@bnc.com</span>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="email-select" id="contact-email" value="contact@bnc.com">
+                                <label class="form-check-label" for="contact-email">other questions</label>
+                                <span class="fst-italic opacity-50 fw-light">contact@bnc.com</span>
+                              </div>
+                            </div>
+                          </div>
+                        <button type="submit" class="btn w-100">send</button>
+                      </form>
+                </div>
+                <!-- SECTION IMAGE -->
+                <div class="col-lg-7">
+                    <img class="img-fluid section-image rounded" src="images/brunch.jpg" alt="Image of a brunch table">
+                </div>
+            </div>
+        </section>
+          
+        <!-- INSTAGRAM -->
+        <section class="container" id="instagram">
+                <h2>@brunchncrunch</h2>
+                <p><a class="text-decoration-none" href="https://instagram.com/brunchncrunch">follow us on instagram</a></p>
+               <!-- INSTAGRAM IMAGES WITH CAPTION TEXT WHILE HOVERING -->
+                <div class="row anim-instagram">
+                    <div class="col-6 col-md-4 col-lg-3 p-1">
+                        <div class="card border-0 d-flex justify-content-center align-items-center">
+                            <img class="card-img img-fluid" src="images/item11.jpg" alt="Instagram image">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end p-0">
+                                <p class="card-text bg-white opacity-75 text-black p-2 rounded-bottom">Wake up to a delicious, wholesome brunch at our restaurant. Our granola bowls are the perfect start to your day! #healthyeats #brunchgoals</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 p-1">
+                        <div class="card border-0 d-flex justify-content-center align-items-center">
+                            <img class="card-img img-fluid" src="images/item12.jpg" alt="Instagram image">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end p-0">
+                                <p class="card-text bg-white opacity-75 text-black p-2 rounded-bottom">Get your protein fix with our fluffy pancakes topped with a perfectly cooked egg. The perfect brunch combo!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 p-1">
+                        <div class="card border-0 d-flex justify-content-center align-items-center">
+                            <img class="card-img img-fluid" src="images/item13.jpg" alt="Instagram image">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end p-0">
+                                <p class="card-text bg-white opacity-75 text-black p-2 rounded-bottom">Say hello to our refreshing smoothies made with only the freshest, organic ingredients. Perfect for a quick pick-me-up or post-workout fuel. #healthylifestyle</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 p-1">
+                        <div class="card border-0 d-flex justify-content-center align-items-center">
+                            <img class="card-img img-fluid" src="images/item14.jpg" alt="Instagram image">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end p-0">
+                                <p class="card-text bg-white opacity-75 text-black p-2 rounded-bottom">Freshly squeezed juice caption: "Start your day off right with our refreshing and nutrient-packed freshly squeezed juices. The perfect way to fuel your body and energize your mind.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 p-1">
+                        <div class="card border-0 d-flex justify-content-center align-items-center">
+                            <img class="card-img img-fluid" src="images/people2.jpg" alt="Instagram image">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end p-0">
+                                <p class="card-text bg-white opacity-75 text-black p-2 rounded-bottom">Cheers to the weekend! Our bottomless mimosa party is the perfect way to kick off your Saturday or Sunday. Contact us to book your private event space.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 p-1">
+                        <div class="card border-0 d-flex justify-content-center align-items-center">
+                            <img class="card-img img-fluid" src="images/item15.jpg" alt="Instagram image">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end p-0">
+                                <p class="card-text bg-white opacity-75 text-black p-2 rounded-bottom">Treat yourself to a bottomless mimosa brunch with your friends or colleagues. Our private event space is the perfect setting for any occasion. #bottomlessmimosas #brunchparty</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 p-1">
+                        <div class="card border-0 d-flex justify-content-center align-items-center">
+                            <img class="card-img img-fluid" src="images/item16.jpg" alt="Instagram image">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end p-0">
+                                <p class="card-text bg-white opacity-75 text-black p-2 rounded-bottom">Take your toast game to the next level with our caramelised toast. Crispy, sweet, and oh-so-satisfying!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 p-1">
+                        <div class="card border-0 d-flex justify-content-center align-items-center">
+                            <img class="card-img img-fluid" src="images/people1.jpg" alt="Instagram image">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end p-0">
+                                <p class="card-text bg-white opacity-75 text-black p-2 rounded-bottom">Create unforgettable memories with us! Our private event space is perfect for any occasion, from birthdays to corporate events. Contact us to learn more and book your next event.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none d-md-inline col-md-4  d-lg-none p-1">
+                        <div class="card border-0 d-flex justify-content-center align-items-center">
+                            <img class="card-img img-fluid" src="images/item17.jpg" alt="Instagram image">
+                            <div class="card-img-overlay d-flex flex-column justify-content-end p-0">
+                                <p class="card-text bg-white opacity-75 text-black p-2 rounded-bottom">Starting the day off with a delicious and nutritious combo - our mouth-watering toast topped with smoked salmon and perfectly poached egg. #brunchnacrunch #salmonandeggs #brunchgoals</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- breaker -->
+        <div class=" d-flex justify-content-between mt-5 mx-3 breaker-text">
+            <span class="text-center">nutritious</span>
+            <span class="text-center mx-3">sustainable</span>
+            <span class="text-center">organic</span>
+        </div>
+    </main>
+
+    <!-- FOOTER INFO -->
+    <footer>
+        <section class="container-fluid mt-5 p-5 mx-0" id="info">
+            <div class="row d-sm-flex mx-sm-auto text-sm-center">
+                <!-- OPEN HOURS -->
+                <div class="col-md-4 ">
+                    <h2 class="text-white fs-4">open hours</h2>
+                    <p class="m-0 mb-1">Monday - Friday</p>
+                    <p>10:00 - 16:00</p>
+                    <p class="m-0 mb-1">Saturday - Sunday</p>
+                    <p class="pb-3">09:00 - 17:00</p>
+                </div>
+                <!-- ADDRESS -->
+                <div class="col-md-4 ">
+                    <h2 class="text-white fs-4">find us at</h2>
+                    <p class="m-sm-auto pb-3">
+                        <a class="text-decoration-none" href="https://www.google.com/maps/place/Drottninggatan+40,+111+51+Stockholm/@59.3321865,18.0633337,17z/data=!3m1!4b1!4m6!3m5!1s0x465f9d5e133351e5:0xaf037e42542c3819!8m2!3d59.3321865!4d18.0633337!16s%2Fg%2F11cs76ptfw" target="_blank">Drottninggatan 40,<br>123 45, Stockholm</a>
+                    </p>
+                </div>
+                <!-- CONTACT -->
+                <div class="col-md-4">
+                    <h2 class="text-white fs-4">contact</h2>
+                    <p class="m-0 mb-1"><a class="text-decoration-none" href="mailto:contact@bnc.com" target="_blank">contact@bnc.com</a></p>
+                    <p class="m-0 mb-1"><a class="text-decoration-none" href="mailto:event@bnc.com" target="_blank">event@bnc.com</a></p>
+                    <p><a class="text-decoration-none" href="tel:060-123123" target="_blank" content="+4680123123">+46 80 123 123</a></p>     
+                    <a class="text-decoration-none" href="www.instagram.com" target="_blank">
+                        <img class="socialmedia-icon" src="images/instagram-icon.png" alt="instagram icon">
+                    </a>            
+                </div>
+    
+            </div>
+        </section>
+
+        <p class="text-center m-0 pb-3">&copy; 2023, brunch n' crunch <a class="ms-4" href="https://www.flaticon.com/" title="icons">All icons created by Freepik - Flaticon</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

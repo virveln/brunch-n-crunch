@@ -1,0 +1,510 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&family=Yeseva+One&display=swap');
+
+/* own variables for primary and secondary color */
+:root {
+    --primary-color: #95BA84;
+    --secondary-color: #EBC834;  
+}
+
+/* So the border of focused elements are secondary color */
+main *:focus { 
+    outline: none !important;
+    border-color: var(--secondary-color) !important;
+    box-shadow: 0 0 10px var(--secondary-color) !important;
+ }
+
+ /* change primary font */
+body {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+/*h1-h5 designs*/
+h1 {
+    font-family: 'Yeseva One', cursive;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin: auto;
+    line-height: 0.8em;
+}
+
+h2 {
+    font-family: 'Yeseva One', cursive;
+    font-weight: bold;
+    color: var(--primary-color);
+    padding-bottom: 0.5em;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Yeseva One', cursive;
+    color: var(--primary-color);    
+}
+
+h4 {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+    font-weight: 300;    
+}
+
+/*make it a bit smaller since the font is bigger in itself*/
+p,
+.form-check {
+    font-size: 0.95rem;
+}
+
+/*anchor design*/
+a {
+    color: var(--bs-body-color);
+}
+
+a:hover {
+    text-decoration: underline !important;
+    text-decoration-thickness: 1.75px !important;
+}
+/* only change font-weight on event ant contact anchor hovers */
+#event a:hover,
+#contact a:hover {
+    font-weight: normal !important;
+}
+
+/*so the fixed nav dont doesnt cover the sections when clicking on menu-item*/
+section {
+    padding-top: 4.5em;
+}
+
+/*the big images in sections*/
+.section-image {
+    max-width: 100%;
+    height: calc(100vh - 7em);
+    object-fit: cover;
+    z-index: 98; 
+}
+
+
+/*modify the default design on btn and its states*/
+.btn { 
+    background-color: white;
+    color: var(--secondary-color);
+    font-family: 'Yeseva One', cursive;
+    font-weight: 600;
+    border: 2px solid var(--secondary-color);
+}
+
+/*modify the default design by bootstrap, otherwise it gets black and white when hover and clicked*/
+.btn-check:checked + .btn, 
+.btn.active, 
+.btn.show, 
+.btn:first-child:active, 
+:not(.btn-check) + .btn:active,
+.btn:hover,
+.btn:focus {
+    background-color: var(--secondary-color);
+    color: white;
+    border: 2px solid var(--secondary-color);
+}
+
+/*-----NAVBAR-----*/
+/*add shadow under navbar when scrolled down*/
+.navbar-shadow {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/*remove default shadow on navbar-toggler*/
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/*remove default border when clicking on X in navbar*/
+.navbar .btn-close {
+    --bs-btn-close-focus-shadow: none;
+}
+
+/*modify design on the active section in navbar*/
+.navbar-nav .nav-link.active {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.navbar-nav .nav-link {
+    font-family: 'Yeseva One', cursive;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    border-radius: 2px;
+}
+
+.dropdown-menu {
+    border: none;
+}
+
+.navbar .dropdown-item {
+    font-family: 'Yeseva One', cursive;
+    color: var(--bs-nav-link-color);
+}
+
+.navbar .dropdown-item:hover {
+    background-color: transparent !important;
+    color: #000;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    border-radius: 2px;
+}
+
+.navbar .dropdown-divider {
+    background-color: var(--primary-color);
+}
+
+/* show dropdown while hover and not click */
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/*set size on logo in navbar*/
+.navbar .logo {
+    width: 4em;
+}
+
+.nav-link a:focus {
+    border-color: var(--secondary-color);
+}
+
+/*-----HERO-----*/
+/* hero background taking full screen height */
+.hero {
+    background-image: url("images/hero1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    max-height: 100%;
+}
+
+/* edit slogan */
+.slogan {
+    font-family: 'Poppins', sans-serif !important;
+    color: rgb(56, 56, 56);
+    background-color: rgba(255, 255, 255, 0.75);
+    max-width: 22em;
+    margin-top: 0.75em;
+}
+
+/* -----WEEK SPECIAL & OPEN HOURS----- */
+#week-special h3 {
+    color: var(--secondary-color);
+}
+
+/*to get the text more together*/
+#week-special p {
+    max-width: 30em;
+}
+
+/* as a breaker before next section*/
+.breaker-text span {
+    font-size: 170%;
+    font-weight: 100;
+    color: rgb(127, 127, 127);
+}
+
+/*-----MENU-----*/
+
+/*CATEGORY ICONS*/
+#menu .category-icons img {
+    max-width: 3em;
+}
+
+/*To change color and zoom in the menu category icons when hover*/
+#menu .category-icons div {
+    transition: transform .5s ease;
+}
+
+#menu .category-icons div:hover {
+    transform: scale(1.25);
+}
+
+#menu .category-icons .btn:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none !important;
+}
+
+#menu .category-icons>div:hover h4 {
+    font-weight: normal;
+}
+
+/*Carousel images, fixing the size and so images always the same size*/
+#menu .carousel-img {
+    height: calc(100vh - 7em);
+    min-height: 39.5em;
+    width: auto;
+    max-width: 100%;
+    object-fit: cover;
+    filter: brightness(100%);
+    transition: filter .5s ease-in-out;
+}
+
+/* make images darker when hovering */
+#menu .carousel:hover .carousel-img{
+    filter: brightness(75%);
+}
+
+/*to put button over carousel images*/
+#menu .menu-btn {
+    background-color: rgba(0, 0, 0, 0.1);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    font-weight: bold;
+    font-size: xx-large;
+    z-index: 10;
+}
+
+#menu .menu-btn:hover {
+    background-color: var(--secondary-color);
+    text-shadow: none;
+    text-decoration: none !important;
+}
+
+
+/*-----ABOUT-----*/
+/*A button that looks like text and when you click more text appears*/
+#about .read-more-btn {
+    all: unset;
+    cursor: pointer;
+    font-style: italic;
+}
+
+/*needs to have this in css in order for js-function to work*/
+#about .read-more-text {
+    display: none;
+}
+
+
+/*-----CONTACT FORM-----*/
+/* Edit default design */
+#contact form input,
+#contact form textarea {
+    font-size: 0.9rem;
+}
+
+#contact .form-label {
+    font-family: 'Yeseva One', cursive;
+    font-weight: 100;
+    color: var(--bs-body-color);
+}
+
+#contact ::placeholder {
+    font-size: small;
+    color: rgba(39, 39, 39, 0.25);
+}
+
+.form-check-input[type="radio"]:checked {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/*-----INSTAGRAM-----*/
+/*Make square images*/
+#instagram .card {
+    object-fit: cover;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+}
+
+/* Make instagram image blurry when hovering */
+#instagram .card:hover img{
+    filter: blur(0.1em);
+}
+
+/*Make the text on instagram images only appear when hovering over*/
+#instagram .card p {
+    display: none;
+}
+#instagram .card:hover p{
+    display: flex;
+}
+
+#instagram .card-text {
+    font-size: x-small;
+}
+
+/*-----FOOTER-----*/
+footer {
+    background-color: var(--primary-color);
+}
+
+footer #info div {
+    max-width: 70em;
+}
+
+footer #info .socialmedia-icon {
+    width: 2em;
+}
+
+footer>p {
+    font-size: small;
+}
+
+/*-----ANIMATIONS-----*/
+.anim-hero,
+.anim-fade,
+.anim-instagram>div {
+    opacity: 0;
+}
+
+/*Animation for slogan, it fades in*/
+.activated .anim-hero {
+    transition: all 1000ms ease-in-out;
+    opacity: 1;
+}
+
+/*Animations for sections, it fades in*/
+.anim {
+    position: relative;
+    transition: all 500ms ease-out;
+}
+
+.activated .anim-fade {
+    opacity: 1;
+}
+
+/*animations for instagram section, it fades in*/
+.activated .anim-instagram>div {
+    transition: all 100ms ease-out;
+    opacity: 1;
+}
+
+/* animations for instagram images so they transition after eachotheer */
+.activated .anim-instagram>div:nth-child(2) {
+    transition-delay: 0.25s;
+}
+.activated .anim-instagram>div:nth-child(3) {
+    transition-delay: 0.50s;
+}
+.activated .anim-instagram>div:nth-child(4) {
+    transition-delay: 0.75s;
+}
+.activated .anim-instagram>div:nth-child(5) {
+    transition-delay: 1s;
+}
+.activated .anim-instagram>div:nth-child(6) {
+    transition-delay: 1.25s;
+}
+.activated .anim-instagram>div:nth-child(7) {
+    transition-delay: 1.50s;
+}
+.activated .anim-instagram>div:nth-child(8) {
+    transition-delay: 1.75s;
+}
+.activated .anim-instagram>div:nth-child(9) {
+    transition-delay: 2s;
+}
+
+
+
+/*MEDIA QUERIES*/
+/*Always on computer screens should font in menu be medium*/
+@media screen and (pointer: fine) {
+    .nav-link {
+        font-size: medium !important;
+    }
+    .navbar .dropdown-item {
+        font-size: 0.9rem;
+    }
+}
+
+/*md screens*/
+@media screen and (min-width: 768px) {
+    /* make the breaker text bigger on bigger screens */
+    .breaker-text span{
+        font-size: 6vw;
+    }
+}
+
+/*lg screens*/
+@media screen and (min-width: 990px) {
+    /*Make the header a big bigger*/
+    h1 {
+        font-size: 4rem;
+    }
+
+    /*Change the way the hero expands and where its placed*/
+    .hero {
+        position: relative;
+        background-image: url("images/hero2.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 40%;
+        height: 85vh;
+    }
+
+    /*Put the hero text on the rigth*/
+    .hero-text{
+        /*position absolute to be able to move h1 and slogan exactly where it fits*/
+        position: absolute;
+        top: 11%;
+        left: 55%;
+        width: 25em;
+    }
+
+    /* Make the "n'" in title yellow on big screens */
+    .hero .title-n {
+        color: var(--secondary-color);
+    }
+
+    .slogan {
+        background-color: transparent;
+    }
+
+    /*making the space to the nav bigger on bigger screens*/
+    section {
+        padding-top: 6em;
+    }
+
+    /* to make the images as big as the container*/
+    .section-image {
+        height: 100%;
+    }
+
+    /* Make sure the section is always atleast 100vh on bigger screens */
+    #menu,
+    #event,
+    #about {
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    /*Change direction of animation on wider screens so it goes from the sides*/
+    .anim-from-bottom {
+        bottom: 0;
+    }
+
+    .anim-from-left {
+        left: -30vw;
+        opacity: 0;
+    }
+
+    .activated .anim-from-left {
+        left: 0vw;
+        opacity: 1;
+    }
+
+    .anim-from-right {
+        right: -30vw;
+        opacity: 0;
+    }
+
+    .activated .anim-from-right {
+        right: 0vw;
+        opacity: 1;
+    }
+}
+
