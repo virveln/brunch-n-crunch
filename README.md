@@ -7,26 +7,26 @@ Assignment to create a website | HTML | CSS | JavaScript | Solo project
 
 ## Mockups
 
-![brunch-n-crunch-mockup.png](https://github.com/virveln/brunch-n-crunch/bnc1.png)
+![brunch-n-crunch-mockup.png](https://github.com/virveln/brunch-n-crunch/blob/main/img-mockup/bnc1.png)
 *Startsida*
 
-![brunch-n-crunch-mockup.png](https://github.com/virveln/brunch-n-crunch/bnc2.png)
+![brunch-n-crunch-mockup.png](https://github.com/virveln/brunch-n-crunch/blob/main/img-mockup/bnc2.png)
 *Veckans deal och öppettider*
 
-![brunch-n-crunch-mockup.png](https://github.com/virveln/brunch-n-crunch/bnc3.png)
+![brunch-n-crunch-mockup.png](https://github.com/virveln/brunch-n-crunch/blob/main/img-mockup/bnc3.png)
 *Ett automatiskt skiftande galleri av rätter och kategorier som länkar till menyn*
 
-![brunch-n-crunch-mockup.png](https://github.com/virveln/brunch-n-crunch/bnc4.png)
+![brunch-n-crunch-mockup.png](https://github.com/virveln/brunch-n-crunch/blob/main/img-mockup/bnc4.png)
 *Information om möjlighet för event och deals*
 
-![brunch-n-crunch-mockup.png](https://github.com/virveln/brunch-n-crunch/bnc5.png)
+![brunch-n-crunch-mockup.png](https://github.com/virveln/brunch-n-crunch/blob/main/img-mockup/bnc5.png)
 *Information om restaurangen*
 
-![brunch-n-crunch-mockup.png](https://github.com/virveln/brunch-n-crunch/bnc6.png)
+![brunch-n-crunch-mockup.png](https://github.com/virveln/brunch-n-crunch/blob/main/img-mockup/bnc6.png)
 *Kontaktsida*
 
-![brunch-n-crunch-mockup.png](https://github.com/virveln/brunch-n-crunch/bnc7.png)
+![brunch-n-crunch-mockup.png](https://github.com/virveln/brunch-n-crunch/blob/main/img-mockup/bnc7.png)
 *Visar de senast uppladdade bilderna från deras Instagramkonto*
 
-![brunch-n-crunch-mockup.png](https://github.com/virveln/brunch-n-crunch/bnc8.png)
+![brunch-n-crunch-mockup.png](https://github.com/virveln/brunch-n-crunch/blob/main/img-mockup/bnc8.png)
 *Information i footer*
